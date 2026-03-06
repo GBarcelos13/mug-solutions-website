@@ -1,0 +1,581 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mug Solutions | Soluções Tecnológicas Inteligentes para Empresas</title>
+  <meta name="description"
+    content="A Mug Solutions desenvolve automações, sistemas e soluções digitais para aumentar a eficiência e o crescimento de empresas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo" id="logo-link">
+        <span class="logo-icon">
+          <svg width="38" height="38" viewBox="0 0 38 38" fill="none">
+            <rect width="38" height="38" rx="9" fill="url(#lg1)"/>
+            <path d="M9 26L16 11L23 21L27 16" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="27" cy="16" r="2.5" fill="white"/>
+            <defs>
+              <linearGradient id="lg1" x1="0" y1="0" x2="38" y2="38" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#3B82F6"/>
+                <stop offset="1" stop-color="#8B5CF6"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="logo-text">Mug <span class="logo-accent">Solutions</span></span>
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#solucoes" class="nav-link">Soluções</a>
+        <a href="#beneficios" class="nav-link">Benefícios</a>
+        <a href="#processo" class="nav-link">Como Funciona</a>
+        <a href="#contato" class="nav-cta" id="nav-cta-btn">Falar com Especialista</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+    <div class="container hero-inner">
+      <div class="hero-content" data-animate="fade-up">
+        <div class="hero-badge"><span class="badge-dot"></span>Tecnologia para o Futuro das Empresas</div>
+        <h1 class="hero-title">Soluções Tecnológicas<br /><span class="gradient-text">Inteligentes</span>
+          para<br />Empresas que Querem Crescer</h1>
+        <p class="hero-subtitle">A Mug Solutions desenvolve automações, sistemas e soluções digitais para aumentar a
+          eficiência e o crescimento de empresas. Transforme seus processos com tecnologia de ponta.</p>
+        <div class="hero-actions">
+          <a href="#contato" class="btn btn-primary" id="hero-cta-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+            </svg>
+            Falar com Especialista
+          </a>
+          <a href="#solucoes" class="btn btn-outline" id="hero-cta-secondary">
+            Conhecer Soluções
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item"><span class="stat-number" data-target="150">0</span><span
+              class="stat-suffix">+</span><span class="stat-label">Projetos Entregues</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat-item"><span class="stat-number" data-target="98">0</span><span
+              class="stat-suffix">%</span><span class="stat-label">Satisfação dos Clientes</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat-item"><span class="stat-number" data-target="40">0</span><span
+              class="stat-suffix">%</span><span class="stat-label">Redução de Custos</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" data-animate="fade-left">
+        <div class="hero-img-wrapper">
+          <img src="hero.png" alt="Dashboard tecnológico Mug Solutions" class="hero-img" />
+          <div class="hero-card hero-card-1">
+            <div class="hcard-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+              </svg></div>
+            <div class="hcard-info"><span class="hcard-value">+40%</span><span class="hcard-label">Produtividade</span>
+            </div>
+          </div>
+          <div class="hero-card hero-card-2">
+            <div class="hcard-icon hcard-icon-green"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg></div>
+            <div class="hcard-info"><span class="hcard-value">Ativo</span><span class="hcard-label">Automação
+                24/7</span></div>
+          </div>
+          <div class="hero-card hero-card-3">
+            <div class="hcard-icon hcard-icon-purple"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                <line x1="12" y1="17" x2="12.01" y2="17" />
+              </svg></div>
+            <div class="hcard-info"><span class="hcard-value">IA</span><span class="hcard-label">Inteligência
+                Aplicada</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator"><span>Explore</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="sobre-inner">
+        <div class="sobre-visual" data-animate="fade-right">
+          <div class="sobre-grid">
+            <div class="sobre-block sobre-block-main">
+              <div class="sblock-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.8">
+                  <circle cx="12" cy="12" r="3" />
+                  <path
+                    d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" />
+                </svg></div>
+              <h3>Tecnologia que Transforma</h3>
+              <p>Soluções sob medida para acelerar o crescimento da sua empresa.</p>
+            </div>
+            <div class="sobre-block sobre-block-2">
+              <div class="sblock-icon sblock-icon-purple"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg></div>
+              <h3>Confiança e Qualidade</h3>
+              <p>Comprometimento total com resultados e excelência.</p>
+            </div>
+            <div class="sobre-block sobre-block-3">
+              <div class="sblock-num">5+</div>
+              <p>Anos de experiência em soluções digitais</p>
+            </div>
+            <div class="sobre-block sobre-block-4">
+              <div class="sblock-num">80+</div>
+              <p>Clientes empresariais atendidos</p>
+            </div>
+          </div>
+        </div>
+        <div class="sobre-content" data-animate="fade-left">
+          <div class="section-tag">Sobre Nós</div>
+          <h2 class="section-title">Nascemos para Impulsionar Empresas com Tecnologia</h2>
+          <p class="sobre-desc">A Mug Solutions nasceu com o propósito de ajudar empresas a crescer através da
+            tecnologia. Desenvolvemos soluções digitais inteligentes que automatizam processos, integram ferramentas e
+            aumentam a produtividade das equipes.</p>
+          <p class="sobre-desc">Nossa equipe de especialistas combina expertise técnica com visão de negócios para
+            entregar soluções que geram resultados reais e mensuráveis.</p>
+          <div class="diferenciais">
+            <div class="diferencial-item">
+              <div class="dif-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg></div><span>Soluções 100% personalizadas</span>
+            </div>
+            <div class="diferencial-item">
+              <div class="dif-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg></div><span>Tecnologia moderna e escalável</span>
+            </div>
+            <div class="diferencial-item">
+              <div class="dif-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg></div><span>Foco em resultados mensuráveis</span>
+            </div>
+            <div class="diferencial-item">
+              <div class="dif-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg></div><span>Automação de processos empresariais</span>
+            </div>
+          </div>
+          <a href="#contato" class="btn btn-primary" id="sobre-cta">Fale com Nossa Equipe</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUÇÕES -->
+  <section class="solucoes" id="solucoes">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <div class="section-tag">Nossos Serviços</div>
+        <h2 class="section-title">Soluções Completas para sua Empresa</h2>
+        <p class="section-subtitle">Do diagnóstico à implementação, entregamos tecnologia que transforma a operação do
+          seu negócio.</p>
+      </div>
+      <div class="cards-grid" id="cards-grid">
+        <div class="service-card" data-animate="fade-up" data-delay="0">
+          <div class="card-number">01</div>
+          <div class="card-icon-wrap"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.8">
+              <path
+                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+            </svg></div>
+          <h3 class="card-title">Automação de Processos</h3>
+          <p class="card-desc">Automação de tarefas repetitivas, integração entre sistemas e otimização completa dos
+            fluxos de trabalho da sua empresa.</p>
+          <div class="card-tags"><span>RPA</span><span>Workflows</span><span>Eficiência</span></div>
+          <a href="#contato" class="card-link">Saiba mais <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg></a>
+        </div>
+        <div class="service-card card-featured" data-animate="fade-up" data-delay="100">
+          <div class="card-number">02</div>
+          <div class="card-icon-wrap"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.8">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg></div>
+          <h3 class="card-title">Desenvolvimento de Sistemas</h3>
+          <p class="card-desc">Criação de sistemas personalizados e softwares sob medida para as necessidades
+            específicas da sua empresa.</p>
+          <div class="card-tags"><span>Web App</span><span>API</span><span>Personalizado</span></div>
+          <a href="#contato" class="card-link">Saiba mais <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg></a>
+        </div>
+        <div class="service-card" data-animate="fade-up" data-delay="200">
+          <div class="card-number">03</div>
+          <div class="card-icon-wrap"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.8">
+              <rect x="2" y="2" width="6" height="6" rx="1" />
+              <rect x="16" y="2" width="6" height="6" rx="1" />
+              <rect x="9" y="9" width="6" height="6" rx="1" />
+              <rect x="2" y="16" width="6" height="6" rx="1" />
+              <rect x="16" y="16" width="6" height="6" rx="1" />
+              <path d="M5 8v3a2 2 0 0 0 2 2h3M19 8v3a2 2 0 0 1-2 2h-3M12 15v3" />
+            </svg></div>
+          <h3 class="card-title">Integrações Tecnológicas</h3>
+          <p class="card-desc">Integração entre APIs, plataformas, CRMs e ferramentas empresariais para que seus
+            sistemas se comuniquem perfeitamente.</p>
+          <div class="card-tags"><span>API</span><span>CRM</span><span>Integração</span></div>
+          <a href="#contato" class="card-link">Saiba mais <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg></a>
+        </div>
+        <div class="service-card" data-animate="fade-up" data-delay="0">
+          <div class="card-number">04</div>
+          <div class="card-icon-wrap"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.8">
+              <path d="M12 2a10 10 0 1 0 10 10" />
+              <path d="M12 8v4l3 3" />
+              <circle cx="19" cy="5" r="3" />
+            </svg></div>
+          <h3 class="card-title">Inteligência Artificial</h3>
+          <p class="card-desc">Implementação de soluções com IA para otimização de processos, atendimento inteligente e
+            análise de dados avançada.</p>
+          <div class="card-tags"><span>IA</span><span>Machine Learning</span><span>Chatbot</span></div>
+          <a href="#contato" class="card-link">Saiba mais <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg></a>
+        </div>
+        <div class="service-card" data-animate="fade-up" data-delay="100">
+          <div class="card-number">05</div>
+          <div class="card-icon-wrap"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.8">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <path d="M3 9h18M9 21V9" />
+            </svg></div>
+          <h3 class="card-title">Sites e Plataformas Digitais</h3>
+          <p class="card-desc">Criação de sites profissionais, landing pages e plataformas digitais com design moderno e
+            foco em conversão.</p>
+          <div class="card-tags"><span>Web</span><span>Landing Page</span><span>Plataforma</span></div>
+          <a href="#contato" class="card-link">Saiba mais <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFÍCIOS -->
+  <section class="beneficios" id="beneficios">
+    <div class="container">
+      <div class="beneficios-inner">
+        <div class="beneficios-left" data-animate="fade-right">
+          <div class="section-tag">Por que a Mug Solutions?</div>
+          <h2 class="section-title">Benefícios Reais para seu Negócio</h2>
+          <p class="section-subtitle">Nossas soluções geram impacto direto nos resultados da sua empresa, com retorno
+            mensurável desde os primeiros meses.</p>
+          <a href="#contato" class="btn btn-primary" id="ben-cta">Quero Esses Benefícios</a>
+        </div>
+        <div class="beneficios-grid" data-animate="fade-left">
+          <div class="ben-card">
+            <div class="ben-icon ben-icon-blue"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+              </svg></div>
+            <h4>Aumento de Produtividade</h4>
+            <p>Suas equipes focam no que realmente importa enquanto a tecnologia cuida das tarefas operacionais.</p>
+          </div>
+          <div class="ben-card">
+            <div class="ben-icon ben-icon-purple"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg></div>
+            <h4>Processos Mais Rápidos</h4>
+            <p>Reduza o tempo de execução de processos em até 80% com automação inteligente e integrada.</p>
+          </div>
+          <div class="ben-card">
+            <div class="ben-icon ben-icon-cyan"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="1" x2="12" y2="23" />
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+              </svg></div>
+            <h4>Redução de Custos</h4>
+            <p>Diminua custos operacionais eliminando retrabalho, erros manuais e tarefas desnecessárias.</p>
+          </div>
+          <div class="ben-card">
+            <div class="ben-icon ben-icon-green"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg></div>
+            <h4>Integração de Sistemas</h4>
+            <p>Todos os seus sistemas e ferramentas trabalhando em conjunto, sem silos de informação.</p>
+          </div>
+          <div class="ben-card">
+            <div class="ben-icon ben-icon-orange"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                <polyline points="17 6 23 6 23 12" />
+              </svg></div>
+            <h4>Crescimento Escalável</h4>
+            <p>Soluções que crescem com seu negócio, sem necessidade de reinvestimento constante em infraestrutura.</p>
+          </div>
+          <div class="ben-card">
+            <div class="ben-icon ben-icon-pink"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg></div>
+            <h4>Segurança e Confiabilidade</h4>
+            <p>Sistemas robustos e seguros, com monitoramento contínuo e suporte especializado.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="processo" id="processo">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <div class="section-tag">Nosso Processo</div>
+        <h2 class="section-title">Como Trabalhamos</h2>
+        <p class="section-subtitle">Um processo estruturado e transparente para garantir que cada solução entregue o
+          máximo valor para sua empresa.</p>
+      </div>
+      <div class="processo-steps">
+        <div class="step-line"></div>
+        <div class="step-item" data-animate="fade-up" data-delay="0">
+          <div class="step-num">01</div>
+          <div class="step-body">
+            <div class="step-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.8">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg></div>
+            <h3>Diagnóstico do Negócio</h3>
+            <p>Mergulhamos na realidade da sua empresa para entender processos, gargalos, oportunidades e objetivos
+              estratégicos.</p>
+          </div>
+        </div>
+        <div class="step-item" data-animate="fade-up" data-delay="150">
+          <div class="step-num">02</div>
+          <div class="step-body">
+            <div class="step-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.8">
+                <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                <polyline points="2 17 12 22 22 17" />
+                <polyline points="2 12 12 17 22 12" />
+              </svg></div>
+            <h3>Planejamento da Solução</h3>
+            <p>Desenhamos a arquitetura tecnológica ideal, definindo tecnologias, cronograma, metas e indicadores de
+              sucesso.</p>
+          </div>
+        </div>
+        <div class="step-item" data-animate="fade-up" data-delay="300">
+          <div class="step-num">03</div>
+          <div class="step-body">
+            <div class="step-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.8">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg></div>
+            <h3>Desenvolvimento e Implementação</h3>
+            <p>Construímos e implantamos a solução com agilidade, transparência e entregas contínuas para validação.</p>
+          </div>
+        </div>
+        <div class="step-item" data-animate="fade-up" data-delay="450">
+          <div class="step-num">04</div>
+          <div class="step-body">
+            <div class="step-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.8">
+                <path d="M23 12a11.05 11.05 0 0 0-22 0zm-5 7a3 3 0 0 1-6 0v-7" />
+              </svg></div>
+            <h3>Suporte e Evolução Contínua</h3>
+            <p>Acompanhamos os resultados, oferecemos suporte dedicado e evoluímos continuamente a solução conforme seu
+              negócio cresce.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="contato">
+    <div class="cta-bg-orb cta-orb-1"></div>
+    <div class="cta-bg-orb cta-orb-2"></div>
+    <div class="container">
+      <div class="cta-inner" data-animate="fade-up">
+        <div class="cta-badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+          </svg> Pronto para transformar sua empresa?</div>
+        <h2 class="cta-title">Transforme sua Empresa<br /><span class="gradient-text">com Tecnologia</span></h2>
+        <p class="cta-subtitle">Solicite uma consultoria gratuita e descubra como a Mug Solutions pode acelerar o
+          crescimento do seu negócio.</p>
+        <div class="cta-form" id="cta-form">
+          <div class="form-row">
+            <div class="form-group"><label for="nome">Nome Completo</label><input type="text" id="nome" name="nome"
+                placeholder="Seu nome" autocomplete="name" /></div>
+            <div class="form-group"><label for="empresa">Empresa</label><input type="text" id="empresa" name="empresa"
+                placeholder="Nome da empresa" autocomplete="organization" /></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label for="email">E-mail Corporativo</label><input type="email" id="email"
+                name="email" placeholder="seuemail@empresa.com" autocomplete="email" /></div>
+            <div class="form-group"><label for="telefone">Telefone / WhatsApp</label><input type="tel" id="telefone"
+                name="telefone" placeholder="(00) 00000-0000" autocomplete="tel" /></div>
+          </div>
+          <div class="form-group full"><label for="mensagem">Como podemos ajudar?</label><textarea id="mensagem"
+              name="mensagem" rows="4"
+              placeholder="Descreva brevemente o desafio ou necessidade da sua empresa..."></textarea></div>
+          <button type="button" class="btn btn-primary btn-full" id="submit-btn" onclick="handleFormSubmit()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13" />
+              <polygon points="22 2 15 22 11 13 2 9 22 2" />
+            </svg>
+            Solicitar Consultoria Gratuita
+          </button>
+          <p class="form-note">* Resposta em até 24 horas úteis. Sem compromisso.</p>
+        </div>
+        <div class="cta-success" id="cta-success" style="display:none;">
+          <div class="success-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg></div>
+          <h3>Mensagem Enviada!</h3>
+          <p>Nossa equipe entrará em contato em breve. Obrigado pelo interesse na Mug Solutions!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-icon">
+              <svg width="38" height="38" viewBox="0 0 38 38" fill="none">
+                <rect width="38" height="38" rx="9" fill="url(#lg2)"/>
+                <path d="M9 26L16 11L23 21L27 16" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="27" cy="16" r="2.5" fill="white"/>
+                <defs>
+                  <linearGradient id="lg2" x1="0" y1="0" x2="38" y2="38" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#3B82F6"/>
+                    <stop offset="1" stop-color="#8B5CF6"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </span>
+            <span class="logo-text">Mug <span class="logo-accent">Solutions</span></span>
+          </a>
+          <p class="footer-desc">Soluções tecnológicas inteligentes para empresas que querem crescer com inovação,
+            eficiência e automação.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn" id="social-linkedin"><svg width="18" height="18"
+                viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg></a>
+            <a href="#" class="social-link" aria-label="Instagram" id="social-instagram"><svg width="18" height="18"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg></a>
+            <a href="#" class="social-link" aria-label="WhatsApp" id="social-whatsapp"><svg width="18" height="18"
+                viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+              </svg></a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h5>Navegação</h5>
+          <ul>
+            <li><a href="#sobre">Sobre a Empresa</a></li>
+            <li><a href="#solucoes">Nossas Soluções</a></li>
+            <li><a href="#beneficios">Benefícios</a></li>
+            <li><a href="#processo">Como Funciona</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h5>Soluções</h5>
+          <ul>
+            <li><a href="#solucoes">Automação de Processos</a></li>
+            <li><a href="#solucoes">Desenvolvimento de Sistemas</a></li>
+            <li><a href="#solucoes">Integrações Tecnológicas</a></li>
+            <li><a href="#solucoes">Inteligência Artificial</a></li>
+            <li><a href="#solucoes">Sites e Plataformas</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h5>Contato</h5>
+          <ul class="footer-contact">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg><a href="mailto:contato@mugsolutions.com.br">contato@mugsolutions.com.br</a></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.58 3.37 2 2 0 0 1 3.55 1.17h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.19 6.19l.88-1.38a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.92 16z" />
+              </svg><a href="tel:+5531900000000">(31) 9 0000-0000</a></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg><span>Belo Horizonte, MG</span></li>
+          </ul>
+          <a href="#contato" class="btn btn-primary btn-sm" id="footer-cta">Solicitar Consultoria</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Mug Solutions. Todos os direitos reservados.</p>
+        <div class="footer-bottom-links"><a href="#">Política de Privacidade</a><a href="#">Termos de Uso</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
