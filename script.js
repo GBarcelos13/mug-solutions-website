@@ -98,11 +98,16 @@ document.querySelectorAll('.service-card').forEach(card => {
   });
 });
 
-// ---- FORM SUBMIT SIMULATION ----
+// ---- WEB3FORMS CONFIG ----
+const WEB3FORMS_ACCESS_KEY = 'c1b526b3-8212-4aa3-b9c8-cea3d154e4f4';
+
+// ---- FORM SUBMIT ----
 function handleFormSubmit() {
-  const nome = document.getElementById('nome').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const empresa = document.getElementById('empresa').value.trim();
+  const nome     = document.getElementById('nome').value.trim();
+  const email    = document.getElementById('email').value.trim();
+  const empresa  = document.getElementById('empresa').value.trim();
+  const telefone = document.getElementById('telefone').value.trim();
+  const mensagem = document.getElementById('mensagem').value.trim();
 
   if (!nome || !email) {
     shakeButton();
@@ -124,14 +129,44 @@ function handleFormSubmit() {
     Enviando...
   `;
 
-  setTimeout(() => {
-    document.getElementById('cta-form').style.display = 'none';
-    const success = document.getElementById('cta-success');
-    success.style.display = 'flex';
-    success.style.flexDirection = 'column';
-    success.style.alignItems = 'center';
-    success.classList.add('animated');
-  }, 1800);
+  fetch('https://api.web3forms.com/submit', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({
+      access_key: WEB3FORMS_ACCESS_KEY,
+      subject: `Novo contato - ${nome} (${empresa || 'sem empresa'})`,
+      nome,
+      empresa,
+      email,
+      telefone,
+      mensagem
+    })
+  })
+  .then(res => res.json())
+  .then(data => {
+    if (data.success) {
+      document.getElementById('cta-form').style.display = 'none';
+      const success = document.getElementById('cta-success');
+      success.style.display = 'flex';
+      success.style.flexDirection = 'column';
+      success.style.alignItems = 'center';
+      success.classList.add('animated');
+    } else {
+      throw new Error(data.message || 'Erro desconhecido');
+    }
+  })
+  .catch((err) => {
+    console.error('Erro ao enviar:', err);
+    btn.disabled = false;
+    btn.innerHTML = `
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="22" y1="2" x2="11" y2="13"/>
+        <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+      </svg>
+      Solicitar Consultoria Gratuita
+    `;
+    showFormError('Erro ao enviar. Tente novamente ou entre em contato diretamente.');
+  });
 }
 
 function isValidEmail(email) {
@@ -215,6 +250,19 @@ style.textContent = `
   }
 `;
 document.head.appendChild(style);
+
+// ---- WHATSAPP WIDGET ----
+const wFab   = document.getElementById('whatsapp-fab');
+const wPopup = document.getElementById('whatsapp-popup');
+const wClose = document.getElementById('whatsapp-close');
+
+wFab.addEventListener('click', () => wPopup.classList.toggle('open'));
+wClose.addEventListener('click', (e) => { e.stopPropagation(); wPopup.classList.remove('open'); });
+document.addEventListener('click', (e) => {
+  if (!document.getElementById('whatsapp-widget').contains(e.target)) {
+    wPopup.classList.remove('open');
+  }
+});
 
 // ---- INIT ----
 document.addEventListener('DOMContentLoaded', () => {
