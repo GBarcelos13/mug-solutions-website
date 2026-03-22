@@ -99,7 +99,7 @@ document.querySelectorAll('.service-card').forEach(card => {
 });
 
 // ---- WEB3FORMS CONFIG ----
-const WEB3FORMS_ACCESS_KEY = '56bdb173-2062-4f97-a94a-67c7d600054c';
+const WEB3FORMS_ACCESS_KEY = 'd9b3dbf1-dbc0-406a-bbe5-ea756f0d48c0';
 
 // ---- FORM SUBMIT ----
 function handleFormSubmit() {
